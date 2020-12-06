@@ -1,0 +1,39 @@
+@import "../board/variables.scss";
+
+.allnums {
+  display: grid;
+  grid-template-columns: repeat(3, $onenumdimension);
+  grid-template-rows: repeat(3, $onenumdimension);
+  width: fit-content;
+  border: 2px solid rgb(26, 65, 66);
+}
+
+.onenum {
+  border: 1px solid rgb(228, 228, 228);
+  background-color: rgb(49, 0, 0);
+  color: rgb(211, 211, 211);
+  height: $onenumdimension;
+  width: $onenumdimension;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: large;
+  text-align: center;
+}
+
+.onenum:hover {
+  background-color: rgb(176, 224, 243);
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .allnums {
+    grid-template-columns: repeat(3, $onenumdimension2);
+    grid-template-rows: repeat(3, $onenumdimension2);
+  }
+  .onenum {
+    height: $onenumdimension2;
+    width: $onenumdimension2;
+    padding: 12px;
+    font-size: 15px;
+  }
+}

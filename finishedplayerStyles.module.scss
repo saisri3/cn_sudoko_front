@@ -1,0 +1,29 @@
+.wrapper {
+  padding: 10px;
+  //   background-color: black;
+  > div {
+    margin: 10px;
+    max-width: 400px;
+    color: black;
+    // background-color: white;
+    border: 1px solid white;
+    padding: 5px;
+  }
+  > .first {
+    background-color: gold;
+    color: black;
+  }
+  > .second {
+    background-color: silver;
+    color: black;
+  }
+  > .third {
+    background-color: rgb(117, 76, 0);
+    color: white;
+  }
+  h3 {
+    color: white;
+    font-weight: 300;
+    font-size: 25px;
+  }
+}

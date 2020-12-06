@@ -1,0 +1,86 @@
+.wrapper {
+  height: 250px;
+  overflow: auto;
+  h3 {
+    border-bottom: 2px solid rgb(180, 180, 180);
+    color: white;
+    margin: 5px;
+    padding: 8px;
+  }
+
+  .oneplayer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 400px;
+    margin: 5px;
+    // background-color: rgb(255, 255, 255);
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+  }
+  .names {
+    width: fit-content;
+    margin-right: 10px;
+  }
+  .barwrapper {
+    position: relative;
+    height: 20px;
+    width: 150px;
+    border: 1px solid rgb(179, 179, 179);
+    .innerbar {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 0;
+      z-index: 10;
+    }
+  }
+
+  .nousers {
+    background-color: black;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    width: 100%;
+    .oneplayer {
+      width: 100%;
+      font-size: 12px;
+      justify-content: flex-end;
+      .barwrapper {
+        width: 80px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .wrapper {
+    .oneplayer {
+      justify-content: center;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(129, 127, 127);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

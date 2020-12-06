@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgb(116, 0, 96);
+  div {
+    padding: 20px;
+    color: white;
+    margin: 0 10px 0;
+  }
+  div:hover {
+    background-color: rgb(138, 0, 0);
+  }
+  a {
+    color: white;
+  }
+  a:link {
+    text-decoration: none;
+    color: white;
+  }
+  .logo {
+    margin-left: auto;
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    div {
+      padding: 10px;
+      margin: 0px 5px 0px;
+      font-size: small;
+    }
+    .logo {
+      font-size: 15px;
+    }
+  }
+}

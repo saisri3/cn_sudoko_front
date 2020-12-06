@@ -1,0 +1,55 @@
+@import "./variables.scss";
+
+.cell {
+  border: 1px solid rgb(228, 228, 228);
+  background-color: rgb(189, 189, 189);
+  height: $celldimension;
+  width: $celldimension;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: large;
+  text-align: center;
+}
+
+.rightborder {
+  border-right: 2px solid rgb(22, 22, 22);
+}
+.bottomborder {
+  border-bottom: 2px solid rgb(14, 14, 14);
+}
+
+.visible {
+  background-color: rgb(153, 153, 153);
+}
+.hidden {
+  background-color: rgb(219, 219, 219);
+}
+
+.highlight {
+  background-color: rgb(182, 255, 182);
+  border: 3px solid rgb(130, 214, 130);
+}
+
+.highlightother {
+  background-color: rgb(0, 136, 214);
+  border: 1px solid rgb(9, 88, 207);
+}
+
+.samecell {
+  background-color: rgb(214, 146, 0);
+  border: 1px solid rgb(179, 122, 0);
+}
+
+.mistake {
+  background-color: rgb(138, 0, 0);
+  border: 1px solid rgb(179, 0, 0);
+}
+
+@media screen and (max-width: 600px) {
+  .cell {
+    height: $celldimension2;
+    width: $celldimension2;
+    padding: 7px;
+    font-size: 15px;
+  }
+}
